@@ -105,6 +105,7 @@
 }
 
 .btn_two {
+    margin-left: 10px;
     background-color: transparent;
 }
 
@@ -121,11 +122,16 @@
     overflow: hidden;
 }
 
+.menu_btn {
+    display: none;
+}
+
 @media screen and(max-width: 990px) {
     .nev_container {
         display: none;
     }
     .menu_btn {
+        display: block;
         position: absolute;
         top: 50%;
         right: 5%;
@@ -135,6 +141,101 @@
             height: 30px;
             color: white;
         }
+    }
+}
+
+@media screen and(max-width: 850px) {
+    .content h1 {
+        font-size: 45px;
+        color: white;
+    }
+}
+
+@media screen and(max-width: 750px) {
+    .content h1 {
+        font-size: 35px;
+        color: white;
+    }
+}
+
+@media screen and(max-width: 680px) {
+    .content h1 {
+        font-size: 35px;
+        color: white;
+    }
+    .btns {
+        font-size: 135%;
+        padding: 15px 30px;
+    }
+}
+
+@media screen and(max-width: 620px) {
+    .content h1 {
+        font-size: 30px;
+        color: white;
+    }
+    .content span {
+        font-size: 50px;
+    }
+    .btns {
+        font-size: 135%;
+        padding: 15px 20px;
+    }
+}
+
+@media screen and(max-width: 520px) {
+    .content h1 {
+        font-size: 30px;
+        color: white;
+    }
+    .content span {
+        font-size: 45px;
+    }
+    .btns {
+        font-size: 135%;
+        padding: 15px 18px;
+    }
+}
+
+@media screen and(max-width: 500px) {
+    .content h1 {
+        font-size: 25px;
+        color: white;
+    }
+    .content span {
+        font-size: 45px;
+    }
+    .btns {
+        font-size: 135%;
+        padding: 15px 10px;
+    }
+}
+
+@media screen and(max-width: 500px) {
+    .content h1 {
+        font-size: 25px;
+        color: white;
+    }
+    .content span {
+        font-size: 45px;
+    }
+    .btns {
+        font-size: 135%;
+        padding: 15px 10px;
+    }
+}
+
+@media screen and(max-width: 435px) {
+    .content h1 {
+        font-size: 20px;
+        color: white;
+    }
+    .content span {
+        font-size: 40px;
+    }
+    .btns {
+        font-size: 100%;
+        padding: 15px 10px;
     }
 }
 
