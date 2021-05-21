@@ -1,8 +1,28 @@
+<!--Header-->
 <ion-header>
-  <ion-toolbar>
-    <ion-title>prep</ion-title>
-  </ion-toolbar>
-</ion-header>
+  <!--Navigation-bar menu-->
+  <ion-nav class="navbar nav navbar-expand-lg navbar-light fixed-top">
+    <div class="nev_container">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+                <a class="nav-link" routerLink="/dash-board">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/about">About Us</a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/how-it-works">How it works</a>
+            </li>
+        </ul>
+    </div>
+<!--navigation-bar menu button-->
+    <div class="menu_btn">
+        <ion-buttons>
+            <ion-icon class="icon" (click)="drawer.toggle()" name="menu"></ion-icon>
+        </ion-buttons>
+    </div>
+    </ion-nav>
+  </ion-header>
 
 <ion-content>
 
