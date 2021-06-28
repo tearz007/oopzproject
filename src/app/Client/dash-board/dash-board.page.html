@@ -4,7 +4,7 @@
         <p>Auto-resizing sidenav</p>
         <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
         <button (click)="showFiller = !showFiller" mat-raised-button>
-           Toggle extra text
+            Toggle extra text
         </button>
     </mat-drawer>
 
@@ -13,13 +13,18 @@
     <section>
         <nav class="navbar nav navbar-expand-lg navbar-light fixed-top">
 
-            <div class="nev_container">
+            <!-- <div class="nev_container"> -->
+            <div class="nevContainer">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" routerLink="/dash-board">Home </a>
+                        <a class="nav-link" routerLink="/dash-board">
+                            <ion-icon name="home"></ion-icon> Home
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" routerLink="/about">About Us</a>
+                        <a class="nav-link" routerLink="/about">
+                            <ion-icon name="alert-outline"></ion-icon> About Us
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" routerLink="/prep">Pep/Prep</a>
@@ -30,6 +35,7 @@
                 </ul>
 
             </div>
+
             <div class="menu_btn">
                 <ion-buttons>
                     <ion-icon class="icon" (click)="drawer.toggle()" name="menu"></ion-icon>
